@@ -1,0 +1,102 @@
+/* index.html */
+.box-wraper {
+	/*width: 400px;*/
+	height: 400px;
+	position: relative;
+}
+.box-child {
+	width: 469px;
+	height: 345px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	position: absolute;
+}
+.click {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+.clicktext {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+	animation: name 8s infinite;
+}
+@keyframes name {
+	from { left: 0px; }
+	to { left: 200px; }
+  0%,100%{ font-family: "BPG Nino Mtavruli", sans-serif;}
+}
+/*Animation.html*/
+
+ .page {
+  margin: 0 auto;
+  width: 920px;
+}
+ .content {
+  width: 33.33%;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+}
+ .circle_inner__layer {
+  width: 600px;
+  height: 200px;
+  transition: all .4s;
+  position: absolute;
+}
+ .circle_inner__layer img {
+  width: 100%;
+  position: absolute;
+}
+ .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.circle .circle_inner__layer:nth-of-type(1) {
+  top: 0px;
+  left: 0px;
+}
+.circle .circle_inner__layer:nth-of-type(2) {
+  top: 0px;
+  left: -210px;
+}
+.circle .circle_inner__layer:nth-of-type(3) {
+  top: 0px;
+  left: -440px;
+}
+.circle_inner {
+  border-radius: 200px;
+  background: #B0D5D6;
+  overflow: hidden;
+  margin: auto;
+  width: 200px;
+  z-index: 1;
+  transition: all .3s;
+  height: 200px;
+  position: relative;
+}
+.circle_inner:hover {
+  transform: scale(1.1);
+}
+.circle_inner:hover .circle_inner__layer:nth-of-type(1) {
+  left: -80px;
+  transition: all 4s linear;
+}
+.circle_inner:hover .circle_inner__layer:nth-of-type(2) {
+  left: -400px;
+  transition: all 4s linear;
+}
+.circle_inner:hover .circle_inner__layer:nth-of-type(3) {
+  left: -140px;
+  transition: all 4s linear;
+}
